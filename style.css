@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+}
+/*Barra de navegación*/
+ol, ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-size:larger;
+    color: white;
+}
+i{
+    font-size: 2em;
+    color: white;
+}
+header{
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+}
+/*Imagenes*/
+.yo{
+    width: 500px;
+    height: 50%;
+    align-items: center;
+}
+.project{
+    width: 100%;
+}
+.work{
+    max-width: 100%;
+}
+.trabajos .experiencia-laboral img{
+    width: 500px;
+    height: 300px;
+}
+.trabajos .experiencia-academica img{
+    width: 500px;
+    height: 300px;
+}
+.trabajos .Soft-Skills img{
+    width: 500px;
+    height: 300px;
+}
+/*Acerca de mi*/
+.acerca-de{
+    text-align: center;
+    font-size:x-large;
+    padding: 1em;
+   }
+.seccion-1{
+    background-color: rgb(174, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+/*Perfil*/
+.Perfil{
+    background-color: rgb(174, 167, 167);
+}
+.Perfil h1{
+    text-align: center;
+    font-size: xx-large;
+    margin: 0em;
+    padding: 1em;
+}
+.Perfil .trabajos div div h1{
+    padding-top: 1em;
+    font-size: x-large;
+}
+.trabajos{
+    display: flex;
+    align-items: stretch;
+    padding: 1em;
+    font-size: larger;
+    justify-content: center;
+}
+.experiencia-academica{
+    padding: 2em;
+}
+.experiencia-laboral{
+    padding: 2em;
+}
+.Soft-Skills{
+    padding: 2em;
+}
+/*Contáctame*/
+footer{
+    background-color: black;
+    padding: 2em;
+    align-items: center;
+    text-align: center;
+}
+#Red{
+    color: white;
+}
+/*MENU*/
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: azure;
+    float: right;
+    line-height: 80px;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+}
+/*FORMULARIO*/
+/* ------------- CSS General ------------- */
+.form-header{
+    background-color:rgb(174, 167, 167);
+}
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+@media (max-width: 768px){
+    header{
+        background-color: black;
+    }
+    .seccion-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+    }
+    .yo{
+        max-width: 100%;
+    }
+    .checkbtn{
+        display: block;
+    }
+    header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:peru;
+        text-align: center;
+        top: 144px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+       font-size: 20px;
+    }
+}
